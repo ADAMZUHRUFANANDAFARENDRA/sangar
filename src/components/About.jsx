@@ -43,7 +43,7 @@ export default function About() {
         </figure>
 
         <div>
-          <header className="section-header" style={{ marginBottom: '1.25rem' }}>
+          <header className="section-header about-header">
             <span className="eyebrow">Tentang SANGAR</span>
             <h2 className="section-title">
               Dikerjakan Roster Terverifikasi, Bukan Bot atau Program Ilegal.

@@ -109,7 +109,7 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li style={{ paddingTop: '0.75rem' }}>
+            <li className="mobile-nav-cta-item">
               <a
                 id="mobile-order-cta"
                 className="btn btn-primary btn-full"

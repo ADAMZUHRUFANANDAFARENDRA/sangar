@@ -116,6 +116,10 @@
   color: var(--accent);
 }
 
+.mobile-nav-cta-item {
+  padding-top: 0.75rem;
+}
+
 /* ==========================================================================
    2. HERO SECTION
    ========================================================================== */
@@ -234,6 +238,10 @@
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   gap: clamp(2rem, 4vw, 3.5rem);
   align-items: center;
+}
+
+.about-header {
+  margin-bottom: 1.25rem;
 }
 
 .about-media {
