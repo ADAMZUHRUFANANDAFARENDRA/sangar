@@ -1,0 +1,214 @@
+/* Tombol */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.82rem 1.45rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  font-family: var(--font-display);
+  font-size: 0.94rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--accent-ink);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn-secondary {
+  background-color: var(--bg-card-elevated);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.btn-ghost:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.btn-sm {
+  padding: 0.62rem 1.05rem;
+  font-size: 0.84rem;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Permukaan Kartu */
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--surface-highlight), var(--shadow-card);
+  transition:
+    border-color var(--transition-med),
+    transform var(--transition-med),
+    background-color var(--transition-med);
+}
+
+.card:hover {
+  border-color: var(--border-strong);
+}
+
+/* Tag / Label Status */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding: 0.26rem 0.62rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: var(--olive-soft);
+  color: var(--text-primary);
+  border: 1px solid rgba(92, 107, 77, 0.4);
+}
+
+.tag-accent {
+  background-color: var(--accent-soft);
+  color: var(--accent);
+  border-color: rgba(232, 168, 56, 0.35);
+}
+
+.tag-verified {
+  background-color: var(--verified-soft);
+  color: #7ad397;
+  border-color: rgba(72, 168, 104, 0.35);
+}
+
+/* Tab Filter Kategori */
+.filter-tabs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-tab {
+  padding: 0.58rem 1.05rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-card);
+  color: var(--text-secondary);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.filter-tab:hover {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.filter-tab.is-active {
+  background-color: var(--accent);
+  color: var(--accent-ink);
+  border-color: var(--accent);
+}
+
+/* Elemen Formulir */
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.field-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.field-control {
+  width: 100%;
+  padding: 0.78rem 0.92rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.field-control::placeholder {
+  color: var(--text-muted);
+}
+
+.field-control:focus {
+  outline: none;
+  border-color: var(--accent);
+  background-color: #161a16;
+}
+
+.field-error {
+  font-size: 0.84rem;
+  color: var(--danger);
+}
+
+.alert-box {
+  padding: 0.95rem 1.05rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  border: 1px solid transparent;
+}
+
+.alert-warning {
+  background-color: var(--accent-soft);
+  border-color: rgba(232, 168, 56, 0.32);
+  color: #f4d18b;
+}
+
+.alert-danger {
+  background-color: var(--danger-soft);
+  border-color: rgba(224, 102, 102, 0.35);
+  color: #f3a6a6;
+}
+
+.alert-safe {
+  background-color: var(--verified-soft);
+  border-color: rgba(72, 168, 104, 0.35);
+  color: #a9e5bc;
+}
